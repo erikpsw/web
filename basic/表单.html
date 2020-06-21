@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单</title>
+</head>
+<body>
+<!--获取用户输入-->
+<form>
+    <input type="text" value="input"> <!--占位，可修改-->
+    <input placeholder="max" maxlength="10">
+    <input placeholder="size" size="33">
+    <input placeholder="password" type="password">
+    <br>
+    <textarea rows="30" cols="30">lbw</textarea>
+    <br>
+    <input type="button" value="按钮">
+    <input type="submit" value="会刷新">
+    <br>
+    <input type="number" min="1990" max="2020" step="1" value="2004">
+    <br>
+    <input type="range" max="200">
+    <br>
+    <input type="checkbox">复选框
+    <br>
+    <input type="radio" checked>单选框 固定
+    <input type="radio" >不固定
+    <br>
+    <select>
+        <option>a</option>
+        <option>b</option>
+    </select>select 不可写入其他
+    <br>
+    <input id="myCar" list="cars" />
+    <datalist id="cars">
+        <option value="BMW">
+        <option value="Ford">
+        <option value="Volvo">
+    </datalist>datalist 可写入其他
+    <br>
+    <input type="date">date
+    <br>
+    <input type="color">color
+</form>
+</body>
+</html>

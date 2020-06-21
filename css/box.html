@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>box</title>
+    <style type="text/css">
+        .class1{
+            text-align: center;
+            border: 1px solid blue;
+            background-color: aqua;
+            padding: 5cm 2cm 5cm;
+            margin: 6cm;
+        }
+        .class1:hover{
+            animation-name: box;
+            animation-delay: 500ms;
+            animation-duration: 1500ms;
+            animation-fill-mode: forwards;
+        }
+        @keyframes box {
+            to{
+                margin-bottom: 1px;
+                margin-top: 5cm;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="class1"></div>
+
+</body>
+</html>
