@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html><head>
+  <title>3D水池测试-沧水</title>
+  <style> 
+  .divcss5{text-align:center} 
+  </style> 
+   </head> 
+  <body> 
+   <div class="divcss5"><li>© by潘世维</li><li>3D测试页面: <a href="https://cangshui.me">沧水的博客</a></li></div> 
+  
+   </body> 
+ 
+  <meta charset="utf-8" />
+  <script src="OES_texture_float_linear-polyfill.js"></script>
+  <script src="lightgl.js"></script>
+  <script src="cubemap.js"></script>
+  <script src="renderer.js"></script>
+  <script src="water.js"></script>
+  <script src="main.js"></script>
+  <script src="fps.js" type="text/javascript"></script>
+  <style type="text/css">
+    * { -webkit-user-select: none; -moz-user-select: none; cursor: default; }
+    body { font: 13px/18px Arial, sans-serif; background: black; color: white; overflow: hidden; }
+    a { color: inherit; cursor: pointer; }
+    img { display: none; }
+    ul { padding: 0 0 0 20px; }
+    h1 { font: bold italic 30px/30px Georgia; text-align: center; }
+    h2 { font: bold italic 17px/17px Georgia; padding-top: 10px; }
+    small { display: block; font-size: 11px; line-height: 15px; }
+    canvas { position: absolute; top: 100px; left: 0; }
+    #help { position: absolute; top: 100px; right: 0; bottom: 0; width: 280px; padding-right: 20px; overflow: auto; }
+    #loading { position: absolute; left: 0; top: 50%; right: 300px; text-align: center; margin-top: -8px; }
+  </style>
+</head><body>
+<div style="text-align:center;clear:both">
+<script src="/gg_bd_ad_720x90.js" type="text/javascript"></script>
+<script src="/follow.js" type="text/javascript"></script>
+</div>
+  <div id="loading">Loading...</div>
+ <div id="help">
+    <h1><font><font>3D水池性能测试</font></font></h1>
+    
+    <p><font><font class="">此动画需要一个不错的显卡和稳定的驱动程序。</font><font>
+      <li><font><font>在水面上画涟漪</font></font></li>
+      <li><font><font>拖动背景旋转相机</font></font></li>
+      <li><font><font>按空格键暂停并取消暂停</font></font></li>
+      <li><font><font>拖动球体移动它</font></font></li>
+      <li><font><font>按L键设置光线方向</font></font></li>
+      <li><font><font>按G键切换重力</font></font></li>
+    
+    <h2><font><font>该动画有如下特性：</font></font></h2>
+    <ul>
+      <li><font><font>光线跟踪反射和折射</font></font></li>
+      <li><font><font>分析环境遮挡</font></font></li>
+      <li><font><font>Heightfield水模拟</font></font></li>
+      <li><font><font>软阴影</font></font></li>
+      <li><font><font>焦散</font></font></li>
+    </ul>
+    
+  <img id="tiles" src="tiles.jpg">
+  <img id="xneg" src="xneg.jpg">
+  <img id="xpos" src="xpos.jpg">
+  <img id="ypos" src="ypos.jpg">
+  <img id="zneg" src="zneg.jpg">
+  <img id="zpos" src="zpos.jpg">
+<script>
+      var myobject={
+            value:0,
+            inc:function(){
+                    alert(this.value)
+                }
+        }
+    
+showFPS.go()
+      </script>  
+      

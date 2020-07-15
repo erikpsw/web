@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    console.log('hello')
+    console.warn('hello')
+    console.error('hello')
+    let age=30  //可赋值
+    var long=10 //不推荐
+    const height=190  //常量
+    console.log(height)
+    const Name='john Name'
+    const x=null
+    const rating=4.5
+    const y=undefined
+    const isCool=true
+    let z
+    console.log(typeof z)
+    //temple string using反引号
+    console.log(`my name is ${Name}`)
+    console.log(Name.substring(5,9).toLowerCase())
+    console.log(Name.split(' '))
+    const s='technology, coding'
+    console.log(s.split(', '))
+    //Array
+    var Numbers=[1,2,3,4,566]
+    console.log(Numbers)
+    const fruits=['apple',10,6.5]
+    console.log(fruits)//支持多种类型
+    fruits[3]='psw'
+    console.log(fruits[3])
+    fruits.push('mangos')//end
+    console.log(fruits[4])
+    fruits.unshift('strawberries')//begin
+    fruits.pop()//pop the last one
+    console.log(Array.isArray(fruits))
+    console.log(fruits.indexOf('psw'))
+    //结构体
+    const person={
+        firstName:'Erik',//不能用等号
+        age:16,
+        hobbies:['steam','csgo'],
+        address:{
+            street:'50 main st',
+            city:'Boston'
+        }
+    }
+    console.log(person.hobbies[1])
+    //取出结构体变量
+    const{firstName,hobbies,address:{city}}=person
+    console.log(city)
+    person.emall='1231'//赋值
+    console.log(person.emall)
+    //for
+    for(let i=0;i<Numbers.length;i++){
+        console.log(Numbers[i]);
+    }
+    //while
+    let i=0;
+    while(i<Numbers.length){
+        console.log(Numbers[i]);
+        i++;
+    }
+    //循环数组
+    for(let i of Numbers){
+        console.log(Numbers[i])
+    }
+    //foreach
+    Numbers.forEach(function(value,index,array){
+        console.log(value*5);
+    })
+    const t=20;
+    if(t==10){
+        console.log('t = 10');
+    }else if(t>10){
+        console.log('t>10')
+    }else{
+        console.log('t!=10');
+    }
+    //==不考虑类型，===考虑类型
+    const num=6
+    const color =x>10?'red':'blue';
+    console.log(color)//三目运算符
+    switch(color){
+        case'red':
+            console.log('is red');
+            break
+        default:
+            console.log('is blue')
+            break
+    }
+    function addnum(num1=1,num2=1){
+        console.log(num1+num2)
+        return num1+num2
+    }
+    console.log(addnum())
+    //箭头函数,不用写return
+    const adds=(num1=10,num2=1) => num1+num2
+    console.log(adds())
+    //类似python类，构造函数
+    function Person(firstName,lastName,dob){
+        this.firstName=firstName;
+        this.lastName=lastName;
+        //date of birth
+        this.dob=new Date(dob)
+        //method
+        this.getBirthYear=function(){
+            return this.dob.getFullYear();
+        }
+    }
+    //实例化对象
+    //月 日 年 
+    const person1=new Person('Shiwei','Pan','6-26-1980')
+    console.log(person1)
+    console.log(person1.dob.getDate())
+    console.log(person1.getBirthYear())
+    Person.prototype.getFullname=function(){
+        return `${this.firstName} ${this.lastName}`;
+    }
+    //外面定义函数
+    console.log(person1.getFullname())
+    //class，类中的函数叫方法
+    class student{
+        constructor(firstName,lastName,dob){
+        this.firstName=firstName;
+        this.lastName=lastName;
+        this.dob=new Date(dob)
+        }
+        getFullname(){
+        return `${this.firstName} ${this.lastName}`;
+        }
+    }
+    const student1=new student('Shiwei','Pan','6-26-1980')
+    console.log(person1.getFullname())
+</script>
+</body>
+</html>
