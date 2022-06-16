@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+        <script src="matter-js-0.17.1\build\matter.js">
+            let engine=Matter.engine.create();
+
+            let render=Matter.engine.create({
+                element:document.body,
+                engine:engine
+            });
+
+            let ground=Matter.Bodies.rectangle(400,600,810,60,{isStatic:true})
+        </script>
+    </body>
+</html>
