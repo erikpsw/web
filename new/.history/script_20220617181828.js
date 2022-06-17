@@ -1,0 +1,7 @@
+$(function(){
+    $("#github").mouseenter(function(){
+        $("#github").animate({ height:'+=20px',
+        width:'+=20px'});
+    }
+    );
+});

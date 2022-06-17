@@ -1,0 +1,21 @@
+#start_box
+{
+    background-color: gray;
+}
+
+#title{
+    text-decoration: none;
+    font-family:"Times New Roman",Georgia,Serif;
+    font-style:inherit;
+    padding:30px 30px;
+    color:black;
+}
+
+.nav{
+    text-decoration: none;
+    font-size: 3em;
+    font-family:"Times New Roman",Georgia,Serif;
+    display:inline;
+    padding:50px 20px;
+    color:black;
+}

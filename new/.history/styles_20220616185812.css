@@ -1,0 +1,17 @@
+#start_box
+{
+    background-color: gray;
+}
+
+#title{
+    text-decoration: none;
+    font-size: 5em;
+    font-family: roboto,sans-serif
+}
+
+.nav{
+    text-decoration: none;
+    font-size: 3em;
+    font-family:"Times New Roman",Georgia,Serif;
+    float: left;
+}

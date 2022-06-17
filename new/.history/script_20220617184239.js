@@ -1,0 +1,10 @@
+$(function(){
+    $("#name2").mouseenter(function(){
+        $("#name2").animate({fontSize:'5em'},"fast");
+    }
+    );
+    $("#name2").mouseleave(function(){
+        $("#name2").animate({fontSize:'5em'},"fast");
+    }
+    ); 
+});

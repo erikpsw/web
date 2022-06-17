@@ -1,0 +1,10 @@
+#start_box
+{
+    background-color: gray;
+}
+
+.nav{
+    text-decoration: none;
+    font-size: 5em;
+    font-family:"Times New Roman",Georgia,Serif;
+}

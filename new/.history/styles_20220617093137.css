@@ -1,0 +1,100 @@
+#start_box
+{
+    display:flex;
+    box-shadow: 0 0.25rem 0.25rem 0 rgb(0 0 0 / 31%);
+    position: fixed;
+    background: #fff;
+    right: 0;
+    left: 0;
+}    
+
+#title{
+    text-decoration: none;
+    font-family:"Times New Roman",Georgia,Serif;
+    font-style:inherit;
+    padding:5px 30px 5px;
+    color:black;
+    font-size: 3em;
+}
+
+.nav{
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family:"Times New Roman",Georgia,Serif;
+    padding-left:1em;
+    color:black;
+    display: inline-flex;
+    align-items: center;
+    font-size: 2em;
+}
+
+.body{
+    margin: 0%;
+}
+
+#myblog{
+    margin-left: auto;
+    padding-right: 1em;
+    float: right;
+}
+
+#mine{
+    width: 270px;
+    height: 337.5px;
+    margin-top: 4em;
+}
+
+#profile{
+    padding-left: 2em;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    max-width: 33.33333333%;
+}
+
+#name1{
+    font-family: Georgia,Serif;
+    font-size: 2em;
+    margin: 2%;
+}   
+
+#name2{
+    font-family: STZhongsong; 
+    font-size: 3em;
+    margin: 2%;
+} 
+
+.network_icon{
+    list-style: none;
+    display: inline-flex;
+    flex-direction: row;
+}
+
+#github{
+    height: 30px;
+}
+#wechat{
+    height: 35px;
+    margin-left: 1em;
+}
+ 
+#intro{
+    box-sizing: border-box;
+    float: left;
+    width: 75%;
+    margin-top: 2em;
+    margin-left: 3em;
+    font-size: 1.5em;
+   ;
+}
+
+.container{
+    padding-top: 3em;
+    box-sizing: border-box;
+}
+
+.text{
+    margin-top:0.2em;
+    margin-bottom: 0.2em;
+    font-family: Times New Roman;
+}
