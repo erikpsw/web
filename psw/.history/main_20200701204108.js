@@ -42,5 +42,3 @@ console.log(t)
 ul.children[4].addEventListener('click',(e)=>{
     window.scroll({top:t,behavior:'smooth'});
 })
-//(e)=>{是什么写法？？？(2022.6,18)
-//重写一个吧

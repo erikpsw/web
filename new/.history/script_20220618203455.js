@@ -9,8 +9,9 @@ $(function(){
     })
 });
 
-const t1=document.querySelector("#history")
-t.addEventListener('click',function(){
+const t=$("#start_box")
+t.children[0].addEventListener('click',(e)=>{
+    console.log('yes');
     window.scrollTo({ 
         top: 1,
         behavior: "smooth" 

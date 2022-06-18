@@ -103,7 +103,6 @@
 }
 
 #QR{
-    height: 15em;
-    position: absolute;
-    display: none;
+    width: 50%;
+    
 }

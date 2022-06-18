@@ -68,7 +68,6 @@
     list-style: none;
     display: inline-flex;
     flex-direction: row;
-    padding-left: 0ch;
 }
 
 #github{
@@ -93,7 +92,7 @@
 .container{
     padding-top: 3em;
     box-sizing: border-box;
-    float: left;
+    box-orient:
 }
 
 .text{
@@ -103,7 +102,6 @@
 }
 
 #QR{
-    height: 15em;
-    position: absolute;
-    display: none;
+    width: 50%;
+    
 }

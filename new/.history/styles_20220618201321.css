@@ -68,7 +68,7 @@
     list-style: none;
     display: inline-flex;
     flex-direction: row;
-    padding-left: 0ch;
+    margin-left: 0ch;
 }
 
 #github{
@@ -103,7 +103,6 @@
 }
 
 #QR{
-    height: 15em;
-    position: absolute;
-    display: none;
+    width: 50%;
+    
 }

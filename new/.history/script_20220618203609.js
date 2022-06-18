@@ -10,7 +10,8 @@ $(function(){
 });
 
 const t1=document.querySelector("#history")
-t.addEventListener('click',function(){
+t.children[0].addEventListener('click',(e)=>{
+    console.log('yes');
     window.scrollTo({ 
         top: 1,
         behavior: "smooth" 

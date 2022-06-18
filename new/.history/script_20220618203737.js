@@ -11,6 +11,7 @@ $(function(){
 
 const t1=document.querySelector("#history")
 t.addEventListener('click',function(){
+    console.log('yes');
     window.scrollTo({ 
         top: 1,
         behavior: "smooth" 
